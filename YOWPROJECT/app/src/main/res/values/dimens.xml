@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vdo_media_button_width">54dp</dimen>
+    <dimen name="vdo_media_button_height">40dp</dimen>
+    <dimen name="tab_label">12sp</dimen>
+    <dimen name="common_0_dp">0dp</dimen>
+    <dimen name="common_1_dp">1sp</dimen>
+    <dimen name="common_2_dp">2sp</dimen>
+    <dimen name="common_3_dp">3sp</dimen>
+    <dimen name="common_5_dp">5sp</dimen>
+    <dimen name="common_7_dp">7sp</dimen>
+    <dimen name="common_8_dp">8sp</dimen>
+    <dimen name="common_10_dp">10sp</dimen>
+    <dimen name="common_12_dp">12sp</dimen>
+    <dimen name="common_13_dp">13sp</dimen>
+    <dimen name="common_14_dp">14sp</dimen>
+    <dimen name="common_15_dp">15sp</dimen>
+    <dimen name="common_16_dp">16sp</dimen>
+    <dimen name="common_17_dp">17sp</dimen>
+    <dimen name="common_18_dp">18sp</dimen>
+    <dimen name="common_20_dp">20dp</dimen>
+    <dimen name="common_22_dp">22sp</dimen>
+    <dimen name="common_25_dp">25sp</dimen>
+    <dimen name="common_30_dp">30dp</dimen>
+    <dimen name="common_40_dp">40dp</dimen>
+    <dimen name="common_50_dp">50dp</dimen>
+    <dimen name="common_60_dp">60dp</dimen>
+</resources>

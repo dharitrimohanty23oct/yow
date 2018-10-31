@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tvBookRide"
+            android:icon="@drawable/car"
+            android:title="@string/book_ride" />
+        <item
+            android:id="@+id/tvYourRide"
+
+            android:title="@string/your_ride" />
+        <item
+            android:id="@+id/tvRateCard"
+
+            android:title="@string/rate_card" />
+        <item
+            android:id="@+id/tvpayments"
+
+            android:title="@string/payments" />
+        <item
+            android:id="@+id/tvReferEarn"
+
+            android:title="@string/refer_earn" />
+        <item
+            android:id="@+id/tvSupport"
+
+            android:title="@string/support" />
+        <item
+            android:id="@+id/tvAbout"
+
+            android:title="@string/about" />
+    </group>
+</menu>

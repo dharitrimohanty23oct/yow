@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EmergencyContactActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:elevation="10dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="left|center_vertical"
+            android:text="Emergency Contact"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:id="@+id/butAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_20_dp"
+        android:background="@color/colorPrimary"
+        android:text="Add Contact"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/common_12_dp"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tvfive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/butAddContact"
+        android:text="@string/addcontact"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvfive"
+        android:gravity="center"
+        android:text="@string/safer"
+        android:textSize="20sp"/>
+</RelativeLayout>

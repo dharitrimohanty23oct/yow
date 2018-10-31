@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9e9e9">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please wait..."
+        android:layout_marginTop="@dimen/common_20_dp"
+        android:textSize="@dimen/common_20_dp"
+        android:textColor="#000"
+        android:layout_marginRight="@dimen/common_10_dp"
+        android:layout_marginLeft="@dimen/common_10_dp"
+        android:id="@+id/text"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="We will auto verify the otp send to \n"
+        android:layout_marginTop="@dimen/common_20_dp"
+        android:textSize="@dimen/common_20_dp"
+        android:textColor="#000"
+        android:layout_below="@+id/text"
+        android:layout_marginRight="@dimen/common_10_dp"
+        android:layout_marginLeft="@dimen/common_10_dp"
+        android:id="@+id/text1"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Otp"
+        android:inputType="number"
+        android:backgroundTint="#1049ce"
+        android:layout_marginTop="@dimen/common_20_dp"
+        android:layout_below="@+id/text1"
+        android:textColor="#000"
+        android:maxLength="4"
+        android:layout_marginLeft="@dimen/common_10_dp"
+        android:layout_marginRight="@dimen/common_10_dp"
+        android:textSize="30dp"
+        android:id="@+id/otp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="#000"
+        android:textSize="@dimen/common_20_dp"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/common_10_dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/verify"/>
+
+</RelativeLayout>

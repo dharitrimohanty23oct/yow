@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.DashBoardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/action_bar" />
+
+
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_above="@+id/navigation"
+            android:animateLayoutChanges="true"
+            android:background="#f1f1f1">
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/lnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+
+        <fragment
+            android:id="@+id/fragment_bottom"
+            android:name="com.yow.www.yowapplication.frgament.BottomFragment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            app:layout="@layout/fragment_bottom"
+            tools:layout="@layout/fragment_bottom"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_20_dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/rideshow"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/common_12_dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Left side NavigationView -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/menu_drawer"/>
+
+
+</android.support.v4.widget.DrawerLayout>

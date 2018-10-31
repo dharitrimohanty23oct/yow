@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frgament.AccountFragment">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/relName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imgAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:scaleType="fitXY"
+
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgAccount"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Simran"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/imgRight"/>
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgAccount"
+        android:layout_below="@+id/tvName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="+919383838394"
+        android:textSize="13sp"
+        android:layout_toLeftOf="@+id/imgRight"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgAccount"
+        android:layout_below="@+id/tvPhone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="simron@gmail.com"
+        android:textSize="13sp"
+        android:layout_toLeftOf="@+id/imgRight"/>
+    <ImageView
+        android:id="@+id/imgRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_arrow"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imgsefety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"
+                android:scaleType="fitXY"
+
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/tvSefety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgsefety"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Sefety and Privacy"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_toLeftOf="@+id/imgRightSefter"/>
+            <TextView
+                android:id="@+id/tvSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgsefety"
+                android:layout_below="@+id/tvSefety"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/security"
+                android:textSize="13sp"
+                android:layout_toLeftOf="@+id/imgRightSefter"/>
+
+            <ImageView
+                android:id="@+id/imgRightSefter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tvContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:padding="10dp"
+                android:text="Emergency Contacts"
+                android:textSize="18sp"
+                android:layout_below="@+id/tvSecurity"
+                android:layout_toRightOf="@+id/imgsefety"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+           />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp">
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:scaleType="fitXY"
+
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgLogout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
